@@ -8,14 +8,14 @@ import logo from "../picture/logo.png"
 export default function Navbar() {
   const { user, logout } = useAuth();
   
-  // ✅ ডেস্কটপ ড্রপডাউনের জন্য স্টেট
+ 
   const [open, setOpen] = useState(false);
   const menuRef = useRef(null);
 
-  // ✅ মোবাইল মেনুর জন্য নতুন স্টেট
+  
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // ডেস্কটপে বাইরে ক্লিক করলে ড্রপডাউন বন্ধ হওয়ার লজিক
+  
   useEffect(() => {
     const handler = (e) => {
       if (menuRef.current && !menuRef.current.contains(e.target)) {
@@ -26,7 +26,7 @@ export default function Navbar() {
     return () => document.removeEventListener("mousedown", handler);
   }, []);
 
-  // মোবাইল মেনু বন্ধ করার হেল্পার ফাংশন
+ 
   const closeMobileMenu = () => setMobileMenuOpen(false);
 
   return (
@@ -48,7 +48,7 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* ✅ Desktop Menu (Hidden on Mobile) */}
+        {/* Desktop Menu (Hidden on Mobile) */}
         <div className="hidden md:flex items-center gap-8">
           <NavLink 
             to="/donation-requests" 
@@ -108,7 +108,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* ✅ Mobile Menu Dropdown (Visible only on Mobile) */}
+      {/*  Mobile Menu Dropdown (Visible only on Mobile) */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-white border-t border-slate-100 absolute w-full left-0 shadow-lg py-4 px-4 flex flex-col gap-4 animate-slide-down">
           
