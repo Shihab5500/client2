@@ -37,44 +37,6 @@
 //             <div ref={menuRef} className="relative">
 //               {/* avatar button */}
 //               <button
-//                 onClick={() => setOpen((prev) => !prev)}
-//                 className="w-9 h-9 rounded-full border overflow-hidden"
-//               >
-//                 <img
-//                   className="w-full h-full object-cover"
-//                   src={user.photoURL || "https://i.ibb.co/9W7w7yY/user.png"}
-//                   alt="avatar"
-//                 />
-//               </button>
-
-//               {/* dropdown */}
-//               {open && (
-//                 <div className="absolute right-0 mt-2 w-44 card p-2 z-50">
-//                   <Link
-//                     to="/dashboard"
-//                     onClick={() => setOpen(false)}
-//                     className="block px-3 py-2 rounded-lg hover:bg-soft"
-//                   >
-//                     Dashboard
-//                   </Link>
-//                   <button
-//                     onClick={() => {
-//                       logout();
-//                       setOpen(false);
-//                     }}
-//                     className="w-full text-left px-3 py-2 rounded-lg hover:bg-soft text-rose-600"
-//                   >
-//                     Logout
-//                   </button>
-//                 </div>
-//               )}
-//             </div>
-//           )}
-//         </div>
-//       </div>
-//     </nav>
-//   );
-// }
 
 
 
@@ -82,7 +44,8 @@
 import { Link, NavLink } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
 import { useEffect, useRef, useState } from "react";
-import { HiMenu, HiX } from "react-icons/hi"; // ✅ আইকন ইমপোর্ট
+import { HiMenu, HiX } from "react-icons/hi";
+import logo from "../picture/logo.png"
 
 export default function Navbar() {
   const { user, logout } = useAuth();
@@ -114,7 +77,7 @@ export default function Navbar() {
         
         {/* Logo */}
         <Link to="/" className="font-black text-2xl text-primary tracking-tight">
-          BloodBond
+          <img className="w-[160px]" src={logo} alt="" />
         </Link>
 
         {/* ✅ Mobile Menu Toggle Button (Hamburger) */}

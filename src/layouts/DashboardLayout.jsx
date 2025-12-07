@@ -516,7 +516,7 @@ export default function DashboardLayout() {
         <div className="flex items-center justify-between mb-6">
           {/* লোগো ক্লিক করলে সাইডবার বন্ধ হবে এবং হোমে যাবে */}
           <Link to="/" onClick={closeSidebar} className="font-black text-xl text-primary hover:opacity-80">
-            BloodBond
+            🩸Blood Donation
           </Link>
           
           {/* Close button for mobile */}

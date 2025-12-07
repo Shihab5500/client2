@@ -12,7 +12,7 @@ export default function Footer() {
           {/* 1. Brand Section */}
           <div className="space-y-4">
             <Link to="/" className="text-3xl font-black text-rose-500 tracking-tighter flex items-center gap-2">
-              🩸 BloodBond
+              🩸Blood Donation
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed">
               Connect with donors, save lives. We are dedicated to bridging the gap between blood donors and those in need across Bangladesh.
@@ -52,7 +52,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <FaEnvelope className="text-rose-500" />
-                <span>support@bloodbond.com</span>
+                <span>support@blooddonation.com</span>
               </li>
             </ul>
           </div>
@@ -79,7 +79,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
-          <p>© {new Date().getFullYear()} BloodBond. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Blood Donation. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-rose-500 transition">Privacy Policy</a>
             <a href="#" className="hover:text-rose-500 transition">Terms of Service</a>
