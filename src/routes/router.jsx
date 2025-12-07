@@ -51,7 +51,7 @@ const router = createBrowserRouter([
       </PrivateRoute>
     ),
     children: [
-      { index: true, element: <DashboardHome /> },   // "/dashboard"
+      { index: true, element: <DashboardHome /> }, 
       { path: "profile", element: <Profile /> },
       { path: "my-donation-requests", element: <MyRequests /> },
       { path: "create-donation-request", element: <CreateRequest /> },
