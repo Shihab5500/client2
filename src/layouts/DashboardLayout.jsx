@@ -392,52 +392,6 @@
 //             Dashboard Home
 //           </NavLink>
 //           <NavLink to="/dashboard/profile" className={({isActive}) => `block px-3 py-2 rounded-lg ${isActive ? "bg-primary text-white" : "hover:bg-soft"}`}>
-//             Profile
-//           </NavLink>
-
-//           {/* ২. ডোনার মেনু */}
-//           {me?.role === "donor" && (
-//             <>
-//               <NavLink to="/dashboard/create-donation-request" className={({isActive}) => `block px-3 py-2 rounded-lg ${isActive ? "bg-primary text-white" : "hover:bg-soft"}`}>
-//                 Create Request
-//               </NavLink>
-//               <NavLink to="/dashboard/my-donation-requests" className={({isActive}) => `block px-3 py-2 rounded-lg ${isActive ? "bg-primary text-white" : "hover:bg-soft"}`}>
-//                 My Requests
-//               </NavLink>
-//             </>
-//           )}
-
-//           {/* ৩. অ্যাডমিন মেনু */}
-//           {me?.role === "admin" && (
-//             <NavLink to="/dashboard/all-users" className={({isActive}) => `block px-3 py-2 rounded-lg ${isActive ? "bg-primary text-white" : "hover:bg-soft"}`}>
-//               All Users
-//             </NavLink>
-//           )}
-
-//           {/* ৪. অ্যাডমিন এবং ভলান্টিয়ার মেনু (All Requests) */}
-//           {(me?.role === "admin" || me?.role === "volunteer") && (
-//             <>
-//               <NavLink to="/dashboard/all-blood-donation-request" className={({isActive}) => `block px-3 py-2 rounded-lg ${isActive ? "bg-primary text-white" : "hover:bg-soft"}`}>
-//                 All Requests
-//               </NavLink>
-//             </>
-//           )}
-
-//           {/* 🛑 [FIX] ফান্ডিং মেনু এখন সবার জন্য উন্মুক্ত (কন্ডিশনের বাইরে আনা হয়েছে) */}
-//           <NavLink to="/dashboard/funding" className={({isActive}) => `block px-3 py-2 rounded-lg ${isActive ? "bg-primary text-white" : "hover:bg-soft"}`}>
-//             Funding
-//           </NavLink>
-
-//         </nav>
-//       </aside>
-
-//       <main className="col-span-12 md:col-span-9 lg:col-span-10 p-4 md:p-6 overflow-x-auto">
-//         <Outlet context={{ me }} />
-//       </main>
-//     </div>
-//   );
-// }
-
 
 
 import { Outlet, NavLink, useNavigate, Link } from "react-router-dom";
