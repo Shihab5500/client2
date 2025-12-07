@@ -67,7 +67,7 @@ export default function DashboardLayout() {
         ></div>
       )}
 
-      {/* ✅ Sidebar (Responsive Drawer) */}
+      {/*  Sidebar (Responsive Drawer) */}
       <aside 
         className={`fixed md:sticky top-0 h-screen w-64 bg-white border-r p-4 z-30 transition-transform duration-300 ease-in-out shadow-lg md:shadow-none
         ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"} md:translate-x-0`}
@@ -89,7 +89,7 @@ export default function DashboardLayout() {
 
         <nav className="space-y-1 h-[calc(100vh-100px)] overflow-y-auto">
           
-          {/* ✅ প্রতিটা NavLink এ onClick={closeSidebar} দেওয়া হয়েছে */}
+          {/*  প্রতিটা NavLink এ onClick={closeSidebar} দেওয়া হয়েছে */}
           
           <NavLink to="/" onClick={closeSidebar} className="block px-3 py-2 rounded-lg hover:bg-soft mb-4 border border-slate-100 text-slate-700 font-semibold">
             🏠 Go Home
@@ -135,7 +135,7 @@ export default function DashboardLayout() {
         </nav>
       </aside>
 
-      {/* ✅ Main Content */}
+      {/*  Main Content */}
       <main className="flex-1 p-4 md:p-6 w-full overflow-x-hidden">
         {/* Mobile Menu Button (Hamburger) */}
         <div className="md:hidden mb-4 flex items-center gap-2">
