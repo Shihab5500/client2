@@ -25,7 +25,7 @@ export default function Login() {
       
       toast.success("Logged in successfully!");
 
-      // ১.৫ সেকেন্ড অপেক্ষা করে রিডাইরেক্ট
+      
       setTimeout(() => {
         navigate(from, { replace: true });
       }, 1500);
