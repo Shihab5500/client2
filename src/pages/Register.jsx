@@ -36,7 +36,7 @@ export default function Register() {
     const form = e.target;
 
     const name = form.name.value;
-    // ✅ ইমেল সবসময় ছোট হাতের অক্ষরে কনভার্ট করা হচ্ছে
+    
     const email = form.email.value.toLowerCase();
     const password = form.password.value;
     const confirm = form.confirm_password.value;
@@ -96,7 +96,7 @@ export default function Register() {
         window.location.href = "/dashboard";
       } else {
         toast.success("Database synced! Please login.");
-        // যদি পুরনো ইউজার হয় (Sync Case), তবে লগইন পেজে পাঠাবো
+        
         navigate("/login");
       }
       
