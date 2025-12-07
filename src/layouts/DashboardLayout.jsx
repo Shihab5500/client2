@@ -270,57 +270,6 @@
 
 //           <p className="px-3 text-xs font-bold text-slate-400 uppercase mb-2 mt-4">Dashboard Menu</p>
 
-//           <NavLink to="/dashboard" end className={({isActive}) => `block px-3 py-2 rounded-lg ${isActive ? "bg-primary text-white" : "hover:bg-soft"}`}>
-//             Dashboard Home
-//           </NavLink>
-//           <NavLink to="/dashboard/profile" className={({isActive}) => `block px-3 py-2 rounded-lg ${isActive ? "bg-primary text-white" : "hover:bg-soft"}`}>
-//             Profile
-//           </NavLink>
-
-//           {me?.role === "donor" && (
-//             <>
-//               <NavLink to="/dashboard/create-donation-request" className={({isActive}) => `block px-3 py-2 rounded-lg ${isActive ? "bg-primary text-white" : "hover:bg-soft"}`}>
-//                 Create Request
-//               </NavLink>
-//               <NavLink to="/dashboard/my-donation-requests" className={({isActive}) => `block px-3 py-2 rounded-lg ${isActive ? "bg-primary text-white" : "hover:bg-soft"}`}>
-//                 My Requests
-//               </NavLink>
-//             </>
-//           )}
-
-//           {me?.role === "admin" && (
-//             <NavLink to="/dashboard/all-users" className={({isActive}) => `block px-3 py-2 rounded-lg ${isActive ? "bg-primary text-white" : "hover:bg-soft"}`}>
-//               All Users
-//             </NavLink>
-//           )}
-
-//           {(me?.role === "admin" || me?.role === "volunteer") && (
-//             <>
-//               <NavLink to="/dashboard/all-blood-donation-request" className={({isActive}) => `block px-3 py-2 rounded-lg ${isActive ? "bg-primary text-white" : "hover:bg-soft"}`}>
-//                 All Requests
-//               </NavLink>
-//               <NavLink to="/dashboard/funding" className={({isActive}) => `block px-3 py-2 rounded-lg ${isActive ? "bg-primary text-white" : "hover:bg-soft"}`}>
-//                 Funding
-//               </NavLink>
-//             </>
-//           )}
-//         </nav>
-//       </aside>
-
-//       <main className="col-span-12 md:col-span-9 lg:col-span-10 p-4 md:p-6 overflow-x-auto">
-//         <Outlet context={{ me }} />
-//       </main>
-//     </div>
-//   );
-// }
-
-
-
-
-// import { Outlet, NavLink, useNavigate, Link } from "react-router-dom";
-// import useAuth from "../hooks/useAuth";
-// import { useEffect, useState } from "react";
-// import axiosSecure from "../api/axiosSecure";
 
 
 import { Outlet, NavLink, useNavigate, Link } from "react-router-dom";
