@@ -3,38 +3,6 @@
 // import { useEffect, useState } from "react";
 // import axiosSecure from "../api/axiosSecure";
 
-// export default function DashboardLayout() {
-//   const { user, loading } = useAuth();
-//   const [me, setMe] = useState(null);
-//   const [dashLoading, setDashLoading] = useState(true);
-//   const navigate = useNavigate();
-
-//   useEffect(() => {
-//     if (loading) return; // firebase এখনো চেক করছে
-
-//     const loadMe = async () => {
-//       try {
-//         if (!user?.email) {
-//           setDashLoading(false);
-//           return navigate("/login");
-//         }
-
-//         const res = await axiosSecure.get("/api/users/me");
-//         setMe(res.data);
-//       } catch (err) {
-//         console.log("ME ERROR:", err?.response?.data || err.message);
-        
-//         // 🛑 [FIX] সার্ভার এরর দিলে বা ইউজার না পেলে জোর করে লগআউট করাবেন না।
-//         // navigate("/login"); <--- এই লাইনটি সমস্যার মূল কারণ ছিল
-        
-//       } finally {
-//         setDashLoading(false); // ✅ fail/success যাই হোক loading off
-//       }
-//     };
-
-//     loadMe();
-//   }, [user, loading, navigate]);
-
 
 
 import { Outlet, NavLink, useNavigate, Link } from "react-router-dom";
