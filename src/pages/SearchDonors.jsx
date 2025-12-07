@@ -17,7 +17,7 @@ export default function SearchDonors() {
   const [result, setResult] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  // ✅ District Names List তৈরি করা
+  //  District Names List তৈরি করা
   const districtList = useMemo(() => {
     return districts.map((d) => d.name);
   }, []);
@@ -26,12 +26,12 @@ export default function SearchDonors() {
   const upazilaList = useMemo(() => {
     if (!selectedDistrict) return [];
 
-    // ১. সিলেক্ট করা জেলার নাম থেকে তার ID বের করা
+    
     const districtObj = districts.find((d) => d.name === selectedDistrict);
     
     if (!districtObj) return [];
 
-    // ২. সেই ID দিয়ে উপজেলা ফিল্টার করা
+    
     return upazilas
       .filter((u) => String(u.district_id) === String(districtObj.id))
       .map((u) => u.name); 
