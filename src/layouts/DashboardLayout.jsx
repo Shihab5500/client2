@@ -1,27 +1,21 @@
-// import { Outlet, NavLink, useNavigate } from "react-router-dom";
-// import useAuth from "../hooks/useAuth";
-// import { useEffect, useState } from "react";
-// import axiosSecure from "../api/axiosSecure";
-
-
 
 import { Outlet, NavLink, useNavigate, Link } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
 import { useEffect, useState } from "react";
 import axiosSecure from "../api/axiosSecure";
-import { HiMenuAlt2 } from "react-icons/hi"; // npm install react-icons
+import { HiMenuAlt2 } from "react-icons/hi"; 
 
 export default function DashboardLayout() {
   const { user, loading } = useAuth();
   const [me, setMe] = useState(null);
   const [dashLoading, setDashLoading] = useState(true);
   
-  // ✅ সাইডবার খোলা/বন্ধ করার স্টেট
+  //  সাইডবার খোলা/বন্ধ করার স্টেট
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   
   const navigate = useNavigate();
 
-  // ✅ লিংক ক্লিক করলে সাইডবার বন্ধ করার ফাংশন
+  //  লিংক ক্লিক করলে সাইডবার বন্ধ করার ফাংশন
   const closeSidebar = () => setIsSidebarOpen(false);
 
   useEffect(() => {
@@ -64,7 +58,7 @@ export default function DashboardLayout() {
   return (
     <div className="flex min-h-screen bg-slate-50 relative">
       
-      {/* ✅ Mobile Overlay (Background dim) */}
+      
       {/* বাইরে ক্লিক করলেও মেনু বন্ধ হবে */}
       {isSidebarOpen && (
         <div 
