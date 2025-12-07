@@ -1,9 +1,19 @@
-# BloodBond - Blood Donation Application
+# Blood Donation - Blood Donation Application
 Purpose: A MERN stack app to connect donors with people who need blood.
 
 ## Live
-Client: https://your-client-live-link.com  
-Server: https://your-server-live-link.com  
+Client Live Link: https://blooddonation20.netlify.app/  
+Server Live Link: https://server2-gilt-five.vercel.app/  
+Github Client Link: https://github.com/Shihab5500/client2
+Github Server Link: https://github.com/Shihab5500/server2
+
+## Admin Credentials
+Email: normartillis11@gmail.com 
+Password: Shihab@@@123
+
+Email: towhidali000@gmail.com 
+Password: Sani555@@@
+
 
 ## Features
 - Role based dashboard (Donor/Admin/Volunteer)
@@ -17,21 +27,15 @@ Server: https://your-server-live-link.com
 
 ## Packages
 Client: react-router-dom, firebase, tailwind, axios, recharts, stripe, framer-motion  
-Server: express, mongodb, cors, dotenv, jsonwebtoken, stripe  
-
-## Admin Credentials
-Email: admin@example.com  
-Password: 123456  
+Server: express, mongodb, cors, dotenv, jsonwebtoken, stripe    
 
 ## Run Locally
-```bash
+bash
 cd server
 npm i
-cp .env.example .env
 npm run dev
 
 cd ../client
 npm i
-cp .env.example .env
 npm run dev
-```
+
