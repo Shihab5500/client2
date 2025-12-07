@@ -106,7 +106,7 @@ export default function SearchDonors() {
             className="input"
             value={selectedUpazila}
             onChange={(e) => setSelectedUpazila(e.target.value)}
-            disabled={!selectedDistrict} // জেলা সিলেক্ট না করলে ডিজেবল থাকবে
+            disabled={!selectedDistrict} 
           >
             <option value="">Upazila</option>
             {upazilaList.map((u) => (
