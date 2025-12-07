@@ -64,7 +64,7 @@ export default function MyRequests() {
           </div>
         </div>
 
-        {/* ✅ Table Responsive Container */}
+        {/*  Table Responsive Container */}
         <div className="overflow-x-auto rounded-lg border border-slate-100">
           <table className="w-full text-sm min-w-[1000px]">
             <thead className="bg-slate-50 text-slate-700 font-semibold border-b">

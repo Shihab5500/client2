@@ -17,7 +17,7 @@ export default function CreateRequest() {
   const [selectedDistrictId, setSelectedDistrictId] = useState("");
   const [selectedUpazila, setSelectedUpazila] = useState("");
 
-  // ✅ district অনুযায়ী upazila filter
+  //  district অনুযায়ী upazila filter
   const filteredUpazilas = useMemo(() => {
     if (!selectedDistrictId) return [];
     return upazilas.filter(
@@ -29,7 +29,7 @@ export default function CreateRequest() {
     e.preventDefault();
     const f = e.target;
 
-    // ✅ district id থেকে district name বের করলাম
+    //  district id থেকে district name বের করলাম
     const districtName =
       districts.find((d) => String(d.id) === String(selectedDistrictId))?.name;
 
@@ -105,7 +105,7 @@ export default function CreateRequest() {
             />
           </div>
 
-          {/* ✅ District Select */}
+          {/*  District Select */}
           <div className="space-y-1">
             <label className="label block text-sm font-medium text-slate-700">Recipient District</label>
             <select
@@ -127,7 +127,7 @@ export default function CreateRequest() {
             </select>
           </div>
 
-          {/* ✅ Upazila Select */}
+          {/*  Upazila Select */}
           <div className="space-y-1">
             <label className="label block text-sm font-medium text-slate-700">Recipient Upazila</label>
             <select
