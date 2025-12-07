@@ -1,8 +1,5 @@
 
 
-
-
-
 import { useEffect, useState } from "react";
 import { useOutletContext, Link } from "react-router-dom";
 import axiosSecure from "../api/axiosSecure";
@@ -155,7 +152,7 @@ export default function DashboardHome() {
   );
 }
 
-// ✅ Stat Card Component
+//  Stat Card Component
 function StatCard({ title, value, icon }) {
   return (
     <div className="card bg-white shadow-sm border border-slate-100 rounded-xl p-5 hover:shadow-md transition-shadow">
@@ -170,7 +167,7 @@ function StatCard({ title, value, icon }) {
   );
 }
 
-// ✅ Requests Table Component (Cleaned for DOM Nesting Warning)
+//  Requests Table Component (Cleaned for DOM Nesting Warning)
 function RequestsTable({ items }) {
   return (
     <div className="overflow-x-auto rounded-lg border border-slate-100">
