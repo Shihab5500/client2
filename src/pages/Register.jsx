@@ -8,7 +8,7 @@ import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import { bloodGroups } from "../utils/bloodGroups";
 
-// ✅ data import
+
 import districts from "../Data/district.json";
 import upazilas from "../Data/upazilas.json";
 
