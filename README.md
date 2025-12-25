@@ -11,8 +11,6 @@ Github Server Link: https://github.com/Shihab5500/server2
 Email: normartillis11@gmail.com 
 Password: Shihab@@@123
 
-Email: towhidali000@gmail.com 
-Password: Sani555@@@
 
 
 ## Features
