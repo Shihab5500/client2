@@ -27,13 +27,3 @@ Password: Shihab@@@123
 Client: react-router-dom, firebase, tailwind, axios, recharts, stripe, framer-motion  
 Server: express, mongodb, cors, dotenv, jsonwebtoken, stripe    
 
-## Run Locally
-bash
-cd server
-npm i
-npm run dev
-
-cd ../client
-npm i
-npm run dev
-
