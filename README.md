@@ -2,7 +2,7 @@
 Purpose: A MERN stack app to connect donors with people who need blood.
 
 ## Live
-Client Live Link: https://blooddonation20.netlify.app/  
+Client Live Link: https://blood-donation-platform.netlify.app/
 Server Live Link: https://server2-gilt-five.vercel.app/  
 Github Client Link: https://github.com/Shihab5500/client2
 Github Server Link: https://github.com/Shihab5500/server2
