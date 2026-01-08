@@ -5,7 +5,7 @@ BloodBond is a modern, responsive, and user-friendly web application designed to
 ---
 
 ## 🔗 Live Links
-- **Live Website:** [Visit BloodBond](https://blood-donation-platform.netlify.app/)
+- **Live Website:** [Visit BloodDonation](https://blood-donation-platform.netlify.app/)
 - **Server API:** [Server Link](https://server2-gilt-five.vercel.app/)
 
 ## 📂 Repository Links
