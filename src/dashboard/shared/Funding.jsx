@@ -1,3 +1,6 @@
+
+
+
 import { useEffect, useState } from "react";
 import axiosSecure from "../../api/axiosSecure";
 import { loadStripe } from "@stripe/stripe-js";
@@ -18,44 +21,45 @@ export default function Funding() {
   useEffect(()=>{ load(); },[]);
 
   return (
-    <div className="card p-6">
+    <div className="card p-6 bg-white dark:bg-slate-800 border-slate-100 dark:border-slate-700">
       <div className="flex items-center justify-between mb-4">
-        <h2 className="text-xl font-black">Funding</h2>
+        <h2 className="text-xl font-black text-slate-800 dark:text-white">Funding History</h2>
         <button onClick={()=>setOpen(true)} className="btn-primary">Give Fund</button>
       </div>
 
-      <div className="overflow-x-auto">
+      <div className="overflow-x-auto rounded-lg border border-slate-100 dark:border-slate-700">
         <table className="w-full text-sm">
-          <thead className="bg-slate-100">
+          <thead className="bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200">
             <tr>
-              <th className="p-2 text-left">Name</th>
-              <th className="p-2 text-left">Email</th>
-              <th className="p-2">Amount</th>
-              <th className="p-2">Date</th>
+              <th className="p-3 text-left">Name</th>
+              <th className="p-3 text-left">Email</th>
+              <th className="p-3 text-center">Amount</th>
+              <th className="p-3 text-center">Date</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="divide-y divide-slate-100 dark:divide-slate-700">
             {funds.map(f=>(
-              <tr key={f._id} className="border-b">
-                <td className="p-2">{f.userName}</td>
-                <td className="p-2">{f.userEmail}</td>
-                <td className="p-2 text-center font-semibold">${f.amount}</td>
-                <td className="p-2 text-center">{new Date(f.date).toLocaleDateString()}</td>
+              <tr key={f._id} className="dark:bg-slate-800">
+                <td className="p-3 dark:text-slate-300">{f.userName}</td>
+                <td className="p-3 dark:text-slate-400">{f.userEmail}</td>
+                <td className="p-3 text-center font-bold text-green-600 dark:text-green-400">${f.amount}</td>
+                <td className="p-3 text-center dark:text-slate-400">{new Date(f.date).toLocaleDateString()}</td>
               </tr>
             ))}
             {!funds.length && (
-              <tr><td colSpan="4" className="p-4 text-center text-slate-500">No fund yet.</td></tr>
+              <tr><td colSpan="4" className="p-4 text-center text-slate-500 dark:text-slate-400">No funds yet. Be the first!</td></tr>
             )}
           </tbody>
         </table>
       </div>
 
+      {/* Payment Modal */}
       {open && (
-        <div className="fixed inset-0 bg-black/40 grid place-items-center p-4 z-50">
-          <div className="card p-6 w-full max-w-md">
-            <div className="flex justify-between items-center mb-3">
-              <h3 className="text-lg font-black">Give Fund</h3>
-              <button className="btn-outline text-sm" onClick={()=>setOpen(false)}>Close</button>
+        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm grid place-items-center p-4 z-50">
+          <div className="card p-6 w-full max-w-md bg-white dark:bg-slate-900 shadow-2xl animate-fade-in">
+            <div className="flex justify-between items-center mb-6">
+              <h3 className="text-xl font-black text-slate-800 dark:text-white">Give Funding</h3>
+              <button className="btn-outline text-xs px-3 py-1" onClick={()=>setOpen(false)}>Close</button>
             </div>
 
             <Elements stripe={stripePromise}>

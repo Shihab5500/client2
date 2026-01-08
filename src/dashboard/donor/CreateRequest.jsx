@@ -29,7 +29,7 @@ export default function CreateRequest() {
     e.preventDefault();
     const f = e.target;
 
-    //  district id থেকে district name বের করলাম
+    
     const districtName =
       districts.find((d) => String(d.id) === String(selectedDistrictId))?.name;
 
@@ -114,7 +114,7 @@ export default function CreateRequest() {
               value={selectedDistrictId}
               onChange={(e) => {
                 setSelectedDistrictId(e.target.value);
-                setSelectedUpazila(""); // district change হলে upazila reset
+                setSelectedUpazila(""); 
               }}
               required
             >

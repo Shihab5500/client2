@@ -1,6 +1,5 @@
 
 
-
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import DashboardLayout from "../layouts/DashboardLayout";
@@ -13,6 +12,8 @@ import SearchDonors from "../pages/SearchDonors";
 import PublicRequests from "../pages/PublicRequests";
 import RequestDetails from "../pages/RequestDetails";
 import ErrorPage from "../pages/ErrorPage"; 
+import Blog from "../pages/Blog";
+import About from "../pages/About";
 
 import DashboardHome from "../dashboard/DashboardHome";
 import Profile from "../dashboard/Profile";
@@ -32,13 +33,15 @@ const router = createBrowserRouter([
       { path: "register", element: <Register /> },
       { path: "search", element: <SearchDonors /> },
       { path: "donation-requests", element: <PublicRequests /> },
-      {
+      
+      
+      { path: "blog", element: <Blog /> },
+      { path: "about", element: <About /> },
+
+      
+      { 
         path: "donation-requests/:id",
-        element: (
-          <PrivateRoute>
-            <RequestDetails />
-          </PrivateRoute>
-        )
+        element: <RequestDetails />
       }
     ]
   },
@@ -61,7 +64,6 @@ const router = createBrowserRouter([
     ]
   },
 
-  
   {
     path: "*",
     element: <ErrorPage />
