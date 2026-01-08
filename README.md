@@ -1,4 +1,4 @@
-# 🩸 BloodBond - Blood Donation Platform
+# 🩸 Blood Donation - Blood Donation Platform
 
 BloodBond is a modern, responsive, and user-friendly web application designed to bridge the gap between blood donors and recipients. It allows users to search for donors, make donation requests, and manage funding seamlessly.
 
